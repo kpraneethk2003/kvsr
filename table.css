@@ -1,0 +1,64 @@
+.body{
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+tr:nth-child(even) {
+    background-color: #434343;
+}
+
+tr:nth-child(odd) {
+    background-color: #434343;
+}
+
+
+
+.lni-search{
+    position: relative;
+    top: 33px;
+    left: 15px;   
+}
+
+#myInput {
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid black;
+    background-color: #434343;
+    color: azure;
+}
+#mytable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid azure;
+    font-size: 10px;
+}
+
+#myTable th,#myTable td,#a{
+    text-align: center;
+    padding: 10px;
+    color: azure;
+}
+#my table tr {
+    border-bottom: 1px solid #ddd;
+}
+#my table tr.header,#my table tr:hover {
+    background-color: #f1f1f1;
+}
+.anc{
+    color: white;
+}
+
+.class1:hover
+.nav-item dropdown-toogle{
+    background-color: black;
+}
+.fil{
+    float: right;
+    color: #ffffff;
+    background-color: #000000;
+    border: 0px;
+    font-size:x-large;
+  }
