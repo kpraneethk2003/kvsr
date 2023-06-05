@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <title>contact us</title>
+    <style>
+      *{
+        font-family: sans-serif;
+      }
+    </style>
+
+
+
+  </head>
+  <body style="background-color:rgb(25,25,26);">
+    <nav class="navbar  navbar-expand-lg fixed-top navbar-dark" style="background-color: #000000;">
+      <a class="navbar-brand" href="index.html">&nbsp;Home&nbsp;</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html#about">&nbsp;About us &nbsp;<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item  dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Documents
+            </a>
+            <div class="dropdown-menu dropdown-content">
+              <a class="dropdown-item" href="lic.html">LIC</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="postal.html">POSTAL</a>
+            </div>
+          </li>
+          <li  class="nav-item">
+            <a class="nav-link" class="nav-link" href="index.html#service">&nbsp;Services &nbsp;</a>
+          </li>
+          <li  class="nav-item">
+            <a class="nav-link" class="nav-link" href="contact.html">&nbsp;Contact us &nbsp;</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <br><br><br>
+    
+    <b>      
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3" style="color:#ffffff">CONTACT INFO</h4>
+      <div id="error_message"></div>
+      <form class="needs-validation"   action="https://formspree.io/f/mbjbwglw"
+       method="POST">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName" style="color:#ffffff">Name</label>
+            <input type="text" name="firstName" class="form-control" id="firstName" required placeholder="Enter your first name">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="email" style="color:#ffffff">Email </label>
+            <input type="email" name="email" class="form-control" id="email" required placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="numb" style="color:#ffffff">Mobile number</label>
+            <input type="number" name="number" class="form-control" id="number" required placeholder="Enter Mobile Number">
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="city" style="color:#ffffff">City</label>
+            <input type="text" name="city" class="form-control" id="city" required placeholder="Enter your city name">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="state" style="color:#ffffff">State</label>
+            <select class="custom-select d-block w-100" id="state" name="state">
+              <option value="" style="color:#ffffff">Choose...</option>
+              <option>Andhra pradesh</option>
+              <option>Telangana</option>
+              <option>Other</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+        </div>
+
+        <h2 style="color: #ffffff;">We will contact you soon</h2>
+        <button class="btn btn-primary btn-lg btn-block" type="submit" style="width:50%" onclick="validation()">Submit</button>
+      </form>
+    
+    </div>
+
+    
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

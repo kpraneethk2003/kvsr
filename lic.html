@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>LIC</title>
+    <style>
+      *{
+        font-family : sans-serif;
+      }
+  </style>
+
+  </head>
+  <body style="background-color:rgb(25,25,26)"> 
+    <nav class="navbar  navbar-expand-lg fixed-top navbar-dark" style="background-color: #000000;">
+      <a class="navbar-brand" href="index.html">&nbsp;Home&nbsp;</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html#about">&nbsp;About us &nbsp;<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item  dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Documents
+            </a>
+            <div class="dropdown-menu dropdown-content">
+              <a class="dropdown-item" href="lic.html">LIC</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="postal.html">POSTAL</a>
+            </div>
+          </li>
+          <li  class="nav-item">
+            <a class="nav-link" class="nav-link" href="index.html#service">&nbsp;Services &nbsp;</a>
+          </li>
+          <li  class="nav-item">
+            <a class="nav-link" class="nav-link" href="contact.html">&nbsp;Contact us &nbsp;</a>
+          </li>
+        </ul>
+      </div>
+    </nav>  
+  </div>
+  <br><br><br>
+  <script>
+    function filterTable() {
+  // Variables
+  let dropdown, table, rows, cells, country, filter;
+  dropdown = document.getElementById("countriesDropdown");
+  table = document.getElementById("myTable");
+  rows = table.getElementsByTagName("tr");
+  filter = dropdown.value;
+
+  // Loops through rows and hides those with countries that don't match the filter
+  for (let row of rows) { // `for...of` loops through the NodeList
+    cells = row.getElementsByTagName("td");
+    country = cells[1] || null; // gets the 2nd `td` or nothing
+    // if the filter is set to 'All', or this is the header row, or 2nd `td` text matches filter
+    if (filter === "All Forms" || !country || (filter === country.textContent)) {
+      row.style.display = ""; // shows this row
+    }
+    else {
+      row.style.display = "none"; // hides this row
+    }
+  }
+}
+
+// function autoSubmit(){
+//   var formObject = document.forms['theForm'];
+//     formObject.submit();
+//     filterTable(); 
+// }
+  </script>
+
+
+
+<center><h2 style="color:#ffffff;">LIC FORMS</h2></center>
+
+<select id="countriesDropdown" class="fil" oninput="filterTable()">
+  <option>All Forms</option>
+  <option value="N">Nomination forms</option>
+  <option value="C">Claim Forms</option>
+  <option value="S">Surrender forms</option>
+  
+</select>
+<br>
+
+<!-- 
+<input type="radio" name="Option" id="countriesDropdown" onChange="autoSubmit();" value="A">A
+<input type="radio" name="Option" id="countriesDropdown" onChange="autoSubmit();" value="C">C
+ -->
+
+
+<i class="lni lni-search"></i>
+
+<input type="text" id="myInput" onkeyup="myFunction()"
+ placeholder="search for document...">
+
+
+<table id="myTable">
+  <th style="width: 1%;">S.no</th>
+  <th style="width:0.5%;"></th>
+      <th style="width: 50%;">DOCUMENTS</th>
+      <th style="width: 50%;">VIEW</th>
+  <tr>
+    <td>1</td>
+    <td style="color:transparent;">A</td>
+    <td>300 FORM</td>
+    <td><a href="https://drive.google.com/file/d/10DRqMegF_cx0-t1Zjiw9j6-vyLtNEVhX/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td style="color:transparent;">A</td>
+    <td>ACR</td>
+    <td><a href="https://drive.google.com/file/d/11YZsFoit40k1IQMXWxn0eue2zSeg0RD8/view?usp=share_link" class="anc">VIEW</a></td>
+
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td style="color:transparent;">A</td>
+    <td>CANCER COVER PROPOSAL</td>
+    <td><a href="https://drive.google.com/file/d/11LHImg01qp2ving4FVJjjy0Heb5YfwX1/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  
+  <tr>
+    <td>4</td>
+    <td style="color:transparent;">A</td>
+    <td>COVID Q 9-1</td>
+    <td><a href="https://drive.google.com/file/d/105H0QC01Pwmo6GzOupCy3C9Lzaw4jvWy/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td style="color:transparent;">A</td>
+    <td>DEH (REVIVAL)</td>
+    <td><a href="https://drive.google.com/file/d/104SJDAZDMDG_cQq1Rq_6Va3Z-ehy8WZH/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td style="color:transparent;">A</td>
+    <td>DISCHARGE FORM</td>
+    <td><a href="https://drive.google.com/file/d/100LF1qoCuXLnOmif7TIlJ74oki0JseeJ/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td style="color:transparent;">A</td>
+    <td>DUPLICATE BOND FORM</td>
+    <td><a href="https://drive.google.com/file/d/11bUK8ATYmsHh4NS0g8emRi26GR_CGkc-/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td style="color:transparent;">A</td>
+    <td>DUPLICATE BOND QUERY FORM</td>
+    <td><a href="https://drive.google.com/file/d/1-uuCsvYNSgBsWvUQABPUE9vjS3FlBUp2/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+
+  <tr>
+    <td>9</td>
+    <td style="color:transparent;">A</td>
+    <td>DUPLICATE BOND REQ FORM</td>
+    <td><a href="https://drive.google.com/file/d/11cWShLBC8R9xObtizyhw_iMSMuXwifbA/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td style="color:transparent;">A</td>
+    <td>FORM NUMBER 294(NB)</td>
+    <td><a href="https://drive.google.com/file/d/1-p3B4EwCABKNf9kh-eJ5fZXYZ0kgFgc6/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>11</td>
+    <td style="color:transparent;">A</td>
+    <td>FORM 60 FOR LIC</td>
+    <td><a href="https://drive.google.com/file/d/1-4HeAVYX-RbPCFYGQZvVWAfR3783Auht/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>12</td>
+    <td style="color:transparent;">A</td>
+    <td>JEEVAN AKSHAYA PROPOSAL FORM</td>
+    <td><a href="https://drive.google.com/file/d/11Tg_MLdBMXHEbD4OxWVSNr5ck1Iks1j6/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>13</td>
+    <td style="color:transparent;">A</td>
+    <td>JEEVAN SHANTI PROPOSAL</td>
+    <td><a href="https://drive.google.com/file/d/11QsYAw-kyWdDVka9cgGdFPUqBPO6dQc6/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>14</td>
+    <td style="color:transparent;">A</td>
+    <td>LCR LETTER</td>
+    <td><a href="https://drive.google.com/file/d/1-fpp9zuawFX7MvHTfrqCS4ANO_3ITNZm/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>15</td>
+    <td style="color:transparent;">A</td>
+    <td>LIFE CERTIFICATE LIC</td>
+    <td><a href="https://drive.google.com/file/d/1-T43tIh_Wnp2CNy40kBqKzg_9q8lgm2p/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>16</td>
+    <td style="color:transparent;">A</td>
+    <td>MINOR LOAN ENDORSEMENT</td>
+    <td><a href="https://drive.google.com/file/d/11X-ociWC4d_2NSB781mlPwaT8KzknZZr/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>17</td>
+    <td style="color:transparent;">A</td>
+    <td>MODE,TRANSFER FORM</td>
+    <td><a href="https://drive.google.com/file/d/1-RkXKFJO9fZ5vB2g-cEvrFujkoRGMG5B/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>18</td>
+    <td style="color:transparent;">A</td>
+    <td>NEFT FORM</td>
+    <td><a href="https://drive.google.com/file/d/1-OdXJ5hmvxFHilWzHKpwdM6NNBqxjE0u/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+
+  <tr>
+    <td>19</td>
+    <td style="color:transparent;">A</td>
+    <td>NRI FORMS</td>
+    <td><a href="https://drive.google.com/file/d/1-LMt0OY635nPjafr_irT8z5xqwpKn5qH/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+
+  <tr>
+    <td>20</td>
+    <td style="color:transparent;">A</td>
+    <td>PMVVY PROPOSAL 4 PAGES</td>
+    <td><a href="https://drive.google.com/file/d/11DkzUhcYiuiLeRonkbt0Vby-vObMHaoh/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+
+  <tr>
+    <td>21</td>
+    <td style="color:transparent;">A</td>
+    <td>REVIVAL FORM (PSH-680)</td>
+    <td><a href="https://drive.google.com/file/d/1-LEg64H2Cf97I6--UvHT2esqPu3n9hG2/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>22</td>
+    <td style="color:transparent;">A</td>
+    <td>SPECIAL MHR</td>
+    <td><a href="https://drive.google.com/file/d/116QX0aJpmahKbXVP9gHQSoe7retERo2u/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>23</td>
+    <td style="color:transparent;">A</td>
+    <td>SPECIMEN SIGNATURE FORM</td>
+    <td><a href="https://drive.google.com/file/d/1-HE91Z0bQVNiiPLsYQzRGaeaKkmNYSOn/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>24</td>
+    <td style="color:transparent;">A</td>
+    <td>SUTABILITY FORM</td>
+    <td><a href="https://drive.google.com/file/d/117Kzjt-8x4eU2O5NyOfeigV7-QohosJk/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>25</td>
+    <td style="color:transparent;">A</td>
+    <td>T E BILL</td>
+    <td><a href="https://drive.google.com/file/d/1-G0_gryfdXY0vpVp9PYoCNTWQN9U9VgE/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>26</td>
+    <td style="color:transparent;">C</td>
+    <td>3783(A)</td>
+    <td><a href="https://drive.google.com/file/d/10zh3Al647nkd8EL4DbhSgfmIdFec2yhz/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>27</td>
+    <td style="color:transparent;">C</td>
+    <td>3788(A2)</td>
+    <td><a href="https://drive.google.com/file/d/10yjUls1ZcSGxnYj01G1timoZaMTNR9ax/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>28</td>
+    <td style="color:transparent;">C</td>
+    <td>3801(T)</td>
+    <td><a href="https://drive.google.com/file/d/10ugv11YIs2LNeUWhBW55gv7GzE_ngILA/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>29</td>
+    <td style="color:transparent;">C</td>
+    <td>ANNEXURE-II</td>
+    <td><a href="https://drive.google.com/file/d/116ORXPN5tF-ogAeZRMrFEQ7a1jRbPUo2/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>30</td>
+    <td style="color:transparent;">C</td>
+    <td>NEFT FORM</td>
+    <td><a href="https://drive.google.com/file/d/110deC0hWhDqVOMmvGoAq-zNmwJGPWy2B/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>31</td>
+    <td style="color:transparent;">N</td>
+    <td>AB PAGES</td>
+    <td><a href="https://drive.google.com/file/d/10tkkaIv1pmlv4ZsXTZr1j1KmzI6F7a6-/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>32</td>
+    <td style="color:transparent;">N</td>
+    <td>FRESH-NOMINATION MINOR</td>
+    <td><a href="https://drive.google.com/file/d/10sk7c_hg4Vgn871bwlqrsTLqQ-AENHIE/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>33</td>
+    <td style="color:transparent;">N</td>
+    <td>FRESH-NOMINATION</td>
+    <td><a href="https://drive.google.com/file/d/10mngzCt8IgcFuqjdaSGc0sYDpncXBhJ7/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>34</td>
+    <td style="color:transparent;">N</td>
+    <td>NOMINATION CHANGE FORM FULL</td>
+    <td><a href="https://drive.google.com/file/d/10l20MURWFH6Ea5xOxgG7f_vOie1OaUOr/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>35</td>
+    <td style="color:transparent;">N</td>
+    <td>NOMINATION CHANGE FORM</td>
+    <td><a href="https://drive.google.com/file/d/10f3ntfOGHU_zG1I3mFR6BHfYPyyjIIS-/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>36</td>
+    <td style="color:transparent;">S</td>
+    <td>SURRENDER ANNEXURE</td>
+    <td><a href="https://drive.google.com/file/d/10ZeMN4hzBL4E3pF3vh2RWoZKXK9uqTCM/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>37</td>
+    <td style="color:transparent;">S</td>
+    <td>SURRENDER ANNEXURE-II</td>
+    <td><a href="https://drive.google.com/file/d/10S1miNsJGZRuWbm7S6qCJWek9O0q8cWc/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>38</td>
+    <td style="color:transparent;">S</td>
+    <td>SURRENDER FORM</td>
+    <td><a href="https://drive.google.com/file/d/10Mnaf_bZZA_BqrXeeyD0jkMQ0yL8-MqI/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+
+  <tr>
+    <td>39</td>
+    <td style="color:transparent;">S</td>
+    <td>SURRENDER REQUEST FORM</td>
+    <td><a href="https://drive.google.com/file/d/10E7xXUQpCmMn9T0Lm2WVsf5F-LwTd4Rq/view?usp=share_link" class="anc">VIEW</a></td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td style="color:transparent;">A</td>
+    <td>LOAN FORM</td>
+    <td><a href="https://drive.google.com/file/d/1Ol0sYVu7z_oN0rKvgbhTnCFDEhArmP5U/view?usp=sharing" class="anc">VIEW</a></td>
+  </tr>
+  
+</table>
+
+<!-- 
+  <i class="lni lni-search"></i>
+  <input type="text" id="myInput" onkeyup="myFunction()"
+   placeholder="search for document...">
+   <table id="myTable">
+    <tr class="header">
+      <th style="width: 1%;">S.no</th>
+      <th style="width: 50%;">DOCUMENTS</th>
+      <th style="width: 50%;">VIEW</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>300 FORM</td>
+      <td><a href="https://drive.google.com/file/d/10DRqMegF_cx0-t1Zjiw9j6-vyLtNEVhX/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>ACR</td>
+      <td><a href="https://drive.google.com/file/d/11YZsFoit40k1IQMXWxn0eue2zSeg0RD8/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>CANCER COVER PROPOSAL</td>
+      <td><a href="https://drive.google.com/file/d/11LHImg01qp2ving4FVJjjy0Heb5YfwX1/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    
+    <tr>
+      <td>4</td>
+      <td>COVID Q 9-1</td>
+      <td><a href="https://drive.google.com/file/d/105H0QC01Pwmo6GzOupCy3C9Lzaw4jvWy/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>DEH (REVIVAL)</td>
+      <td><a href="https://drive.google.com/file/d/104SJDAZDMDG_cQq1Rq_6Va3Z-ehy8WZH/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td>DISCHARGE FORM</td>
+      <td><a href="https://drive.google.com/file/d/100LF1qoCuXLnOmif7TIlJ74oki0JseeJ/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td>DUPLICATE BOND FORM</td>
+      <td><a href="https://drive.google.com/file/d/11bUK8ATYmsHh4NS0g8emRi26GR_CGkc-/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td>DUPLICATE BOND QUERY FORM</td>
+      <td><a href="https://drive.google.com/file/d/1-uuCsvYNSgBsWvUQABPUE9vjS3FlBUp2/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+
+    <tr>
+      <td>9</td>
+      <td>DUPLICATE BOND REQ FORM</td>
+      <td><a href="https://drive.google.com/file/d/11cWShLBC8R9xObtizyhw_iMSMuXwifbA/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>FORM NUMBER 294(NB)</td>
+      <td><a href="https://drive.google.com/file/d/1-p3B4EwCABKNf9kh-eJ5fZXYZ0kgFgc6/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>11</td>
+      <td>FORM 60 FOR LIC</td>
+      <td><a href="https://drive.google.com/file/d/1-4HeAVYX-RbPCFYGQZvVWAfR3783Auht/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td>JEEVAN AKSHAYA PROPOSAL FORM</td>
+      <td><a href="https://drive.google.com/file/d/11Tg_MLdBMXHEbD4OxWVSNr5ck1Iks1j6/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td>JEEVAN SHANTI PROPOSAL</td>
+      <td><a href="https://drive.google.com/file/d/11QsYAw-kyWdDVka9cgGdFPUqBPO6dQc6/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>14</td>
+      <td>LCR LETTER</td>
+      <td><a href="https://drive.google.com/file/d/1-fpp9zuawFX7MvHTfrqCS4ANO_3ITNZm/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>15</td>
+      <td>LIFE CERTIFICATE LIC</td>
+      <td><a href="https://drive.google.com/file/d/1-T43tIh_Wnp2CNy40kBqKzg_9q8lgm2p/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>16</td>
+      <td>MINOR LOAN ENDORSEMENT</td>
+      <td><a href="https://drive.google.com/file/d/11X-ociWC4d_2NSB781mlPwaT8KzknZZr/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>17</td>
+      <td>MODE,TRANSFER FORM</td>
+      <td><a href="https://drive.google.com/file/d/1-RkXKFJO9fZ5vB2g-cEvrFujkoRGMG5B/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>18</td>
+      <td>NEFT FORM</td>
+      <td><a href="https://drive.google.com/file/d/1-OdXJ5hmvxFHilWzHKpwdM6NNBqxjE0u/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+
+    <tr>
+      <td>19</td>
+      <td>NRI FORMS</td>
+      <td><a href="https://drive.google.com/file/d/1-LMt0OY635nPjafr_irT8z5xqwpKn5qH/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+
+    <tr>
+      <td>20</td>
+      <td>PMVVY PROPOSAL 4 PAGES</td>
+      <td><a href="https://drive.google.com/file/d/11DkzUhcYiuiLeRonkbt0Vby-vObMHaoh/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+
+    <tr>
+      <td>21</td>
+      <td>REVIVAL FORM (PSH-680)</td>
+      <td><a href="https://drive.google.com/file/d/1-LEg64H2Cf97I6--UvHT2esqPu3n9hG2/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>22</td>
+      <td>SPECIAL MHR</td>
+      <td><a href="https://drive.google.com/file/d/116QX0aJpmahKbXVP9gHQSoe7retERo2u/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>23</td>
+      <td>SPECIMEN SIGNATURE FORM</td>
+      <td><a href="https://drive.google.com/file/d/1-HE91Z0bQVNiiPLsYQzRGaeaKkmNYSOn/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>24</td>
+      <td>SUTABILITY FORM</td>
+      <td><a href="https://drive.google.com/file/d/117Kzjt-8x4eU2O5NyOfeigV7-QohosJk/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>25</td>
+      <td>T E BILL</td>
+      <td><a href="https://drive.google.com/file/d/1-G0_gryfdXY0vpVp9PYoCNTWQN9U9VgE/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>26</td>
+      <td>3783(A)</td>
+      <td><a href="https://drive.google.com/file/d/10zh3Al647nkd8EL4DbhSgfmIdFec2yhz/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>27</td>
+      <td>3788(A2)</td>
+      <td><a href="https://drive.google.com/file/d/10yjUls1ZcSGxnYj01G1timoZaMTNR9ax/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>28</td>
+      <td>3801(T)</td>
+      <td><a href="https://drive.google.com/file/d/10ugv11YIs2LNeUWhBW55gv7GzE_ngILA/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>29</td>
+      <td>ANNEXURE-II</td>
+      <td><a href="https://drive.google.com/file/d/116ORXPN5tF-ogAeZRMrFEQ7a1jRbPUo2/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>30</td>
+      <td>NEFT FORM</td>
+      <td><a href="https://drive.google.com/file/d/110deC0hWhDqVOMmvGoAq-zNmwJGPWy2B/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>31</td>
+      <td>AB PAGES</td>
+      <td><a href="https://drive.google.com/file/d/10tkkaIv1pmlv4ZsXTZr1j1KmzI6F7a6-/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>32</td>
+      <td>FRESH-NOMINATION MINOR</td>
+      <td><a href="https://drive.google.com/file/d/10sk7c_hg4Vgn871bwlqrsTLqQ-AENHIE/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>33</td>
+      <td>FRESH-NOMINATION</td>
+      <td><a href="https://drive.google.com/file/d/10mngzCt8IgcFuqjdaSGc0sYDpncXBhJ7/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>34</td>
+      <td>NOMINATION CHANGE FORM FULL</td>
+      <td><a href="https://drive.google.com/file/d/10l20MURWFH6Ea5xOxgG7f_vOie1OaUOr/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>35</td>
+      <td>NOMINATION CHANGE FORM</td>
+      <td><a href="https://drive.google.com/file/d/10f3ntfOGHU_zG1I3mFR6BHfYPyyjIIS-/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>36</td>
+      <td>SURRENDER ANNEXURE</td>
+      <td><a href="https://drive.google.com/file/d/10ZeMN4hzBL4E3pF3vh2RWoZKXK9uqTCM/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>37</td>
+      <td>SURRENDER ANNEXURE=II</td>
+      <td><a href="https://drive.google.com/file/d/10S1miNsJGZRuWbm7S6qCJWek9O0q8cWc/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>38</td>
+      <td>SURRENDER FORM</td>
+      <td><a href="https://drive.google.com/file/d/10Mnaf_bZZA_BqrXeeyD0jkMQ0yL8-MqI/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+
+    <tr>
+      <td>39</td>
+      <td>SURRENDER REQUEST FORM</td>
+      <td><a href="https://drive.google.com/file/d/10E7xXUQpCmMn9T0Lm2WVsf5F-LwTd4Rq/view?usp=share_link" class="anc">VIEW</a></td>
+    </tr>
+   </table> -->
+
+
+   <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+   <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[2];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1)
+    {        
+          tr[i].style.display = "";
+        } else {
+           tr[i].style.display = "none";
+         }
+        }
+      }
+    }
+
+    
+   </script>
+  </body>
+</html>
